@@ -10,13 +10,12 @@ namespace nevil
   public:
     light();
     light(int x, int y, double size_x, double size_y, double height,
-     double mass, double dry_friction_coefficient);
+     double mass, double dry_friction_coefficient,
+     const Enki::Color &off_color=Enki::Color(1.0, 1.0, 0.0),
+     const Enki::Color &on_color=Enki::Color(0.5, 0.5, 0.0));
     virtual ~light();
     void turn_on();
     void turn_off();
-
-    static const Enki::Color ON_COLOR;
-    static const Enki::Color OFF_COLOR;
   };
 }
 

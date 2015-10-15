@@ -9,12 +9,11 @@ namespace nevil
   {
   public:
     wall();
-    wall(int x, int y, double size_x, double size_y, double height, double mass = -1);
+    wall(int x, int y, double size_x, double size_y, double height, double mass = -1, 
+      const Enki::Color &color=Enki::Color(0.9, 0.9, 0.9));
     virtual ~wall();
     void turn_on();
     void turn_off();
-
-    static const Enki::Color COLOR;
   };
 }
 

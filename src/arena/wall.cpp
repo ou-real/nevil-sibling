@@ -1,17 +1,16 @@
 #include "nevil/arena/wall.hpp"
 
-const Enki::Color nevil::wall::COLOR = Enki::Color(0.9, 0.9, 0.9);
-
 nevil::wall::wall()
 {
-  setColor(COLOR);
 }
 
-nevil::wall::wall(int x, int y, double size_x, double size_y, double height , double mass)
+nevil::wall::wall(int x, int y, double size_x, double size_y, double height , double mass, const Enki::Color &color)
 {
   pos = Enki::Point(x, y);
+  _off_color = color;
+  _on_color = color;
   setRectangular(size_x, size_y, height, mass);
-  setColor(COLOR);
+  setColor(color);
 }
 
 nevil::wall::~wall() {}

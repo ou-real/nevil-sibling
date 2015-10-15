@@ -13,6 +13,8 @@ namespace nevil
     bool is_on() const { return _is_on; };
 
     protected:
+      Enki::Color _on_color;
+      Enki::Color _off_color;
       bool _is_on;
   };
 }
