@@ -46,14 +46,15 @@ const std::vector<double> nevil::robot::_get_sensor_inputs()
     // One group is 10 pixels
     for (size_t j = 0; j < 10; ++j)
     {
+      double red_value = camera.image[i * 10 + j].r();
       // switch
-      if (camera.image[i * 10 + j].r() == 0.4)
+      if (red_value == 0.4)
         ++sensor_counter[i];
       // light off
-      if (camera.image[i * 10 + j].r() == 0.5)
+      if (red_value == 0.5)
         ++sensor_counter[i + 6];
       // light on
-      if (camera.image[i * 10 + j].r() == 1.0)
+      if (red_value == 1.0)
         ++sensor_counter[i + 12];
     }
   }
