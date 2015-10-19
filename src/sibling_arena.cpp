@@ -8,51 +8,41 @@ nevil::sibling_arena::sibling_arena(int world_size_x, int world_size_y, bool sib
   const double OBJECT_SIZE_X = 6;
   const double OBJECT_SIZE_Y = 0.1;
   const double OBJECT_HEIGHT = 7;
-  const double MASS = -1;
 
   //switch A
   _add_object(new nevil::switch_object(world_size_x / 4.0
     , world_size_y
     , OBJECT_SIZE_X
     , OBJECT_SIZE_Y
-    , OBJECT_HEIGHT
-    , MASS
-    , 1));
+    , OBJECT_HEIGHT));
 
     //light A
   _add_object(new nevil::light(world_size_x / 4.0
     , 0
     , OBJECT_SIZE_X
     , OBJECT_SIZE_Y
-    , OBJECT_HEIGHT
-    , MASS
-    , 0.01));
+    , OBJECT_HEIGHT));
   
   //switch B
   _add_object(new nevil::switch_object(world_size_x * (3 / 4.0)
     , world_size_y
     , OBJECT_SIZE_X
     , OBJECT_SIZE_Y
-    , OBJECT_HEIGHT
-    , MASS
-    , 1));
+    , OBJECT_HEIGHT));
   
   //light B
   _add_object(new nevil::light(world_size_x * (3 / 4.0)
     , 0
     , OBJECT_SIZE_X
     , OBJECT_SIZE_Y
-    , OBJECT_HEIGHT
-    , MASS
-    , 0.01));
+    , OBJECT_HEIGHT));
   
   //Wall in the middle of the field
   _add_object(new nevil::wall(world_size_x / 2.0
     , world_size_y / 2.0
     , 0.01
     , world_size_y
-    , OBJECT_HEIGHT
-    , MASS));
+    , OBJECT_HEIGHT));
 
   //--robots--
   // Create a robot named A
