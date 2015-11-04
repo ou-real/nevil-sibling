@@ -1,13 +1,12 @@
 #include "nevil/sibling_population.hpp"
 
-int nevil::sibling_population::_individual_counter = 0;
-
 nevil::sibling_population::sibling_population() {}
 
 nevil::sibling_population::sibling_population(size_t pop_size, bool sibling_neurons, float bracket_ratio, float mutation_rate)
   : _population_size(pop_size)
   , _bracket_size(int(bracket_ratio * pop_size))
   , _mutation_rate(mutation_rate)
+  , _individual_counter(0)
 {
   _individual_list = std::vector<nevil::sibling_individual *>(2 * _population_size);
   for (int i = 0; i < _population_size; ++i)

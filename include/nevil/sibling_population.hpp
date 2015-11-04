@@ -24,7 +24,7 @@ namespace nevil
 
   protected:
     // Number of individuals created so far
-    static int _individual_counter;
+    int _individual_counter;
     size_t _bracket_size;
     float _mutation_rate;
     size_t _population_size;
