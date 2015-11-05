@@ -77,6 +77,7 @@ nevil::sibling_population &nevil::sibling_population::operator=(const nevil::sib
   _population_size = rhs._population_size;
   _mutation_rate = rhs._mutation_rate;
   _bracket_size = rhs._bracket_size;
+  _individual_counter = rhs._individual_counter;
   _individual_list = std::vector<nevil::sibling_individual *> (rhs.size());
   for (int i = 0; i < _individual_list.size(); ++i)
     _individual_list[i] = new nevil::sibling_individual(*rhs._individual_list[i]);
