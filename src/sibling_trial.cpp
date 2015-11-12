@@ -5,7 +5,7 @@ nevil::sibling_trial::sibling_trial() {}
 
 nevil::sibling_trial::sibling_trial(nevil::args &cl_args)
 {
-  const int WORLD_SIZE_X = 80;
+  const int WORLD_SIZE_X = 40;
   const int WORLD_SIZE_Y = 50;
 
   _population_size = std::stoi(cl_args["ps"]);

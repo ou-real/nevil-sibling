@@ -4,13 +4,13 @@ cd ../build;
 
 #Symmetrty
 ./nevil -xp_path symm1 -tn 0 -xn SiblingAsymTrial -angleA 0 -angleB 0
-./nevil -xp_path symm2 -tn 0 -xn SiblingAsymTrial -angleA 0.25 -angleB 0.25
+./nevil -xp_path symm2 -tn 0 -xn SiblingAsymTrial -angleA 0.5 -angleB 0.5
 ./nevil -xp_path symm3 -tn 0 -xn SiblingAsymTrial -angleA 1 -angleB 1
-./nevil -xp_path symm4 -tn 0 -xn SiblingAsymTrial -angleA 1.25 -angleB 1.25
+./nevil -xp_path symm4 -tn 0 -xn SiblingAsymTrial -angleA 1.5 -angleB 1.5
 
 # Asymmetry
 ./nevil -xp_path asymm2 -tn 0 -xn SiblingAsymTrial -angleA 1 -angleB 0
 ./nevil -xp_path asymm1 -tn 0 -xn SiblingAsymTrial -angleA 0 -angleB 1
-./nevil -xp_path asymm3 -tn 0 -xn SiblingAsymTrial -angleA 0.25 -angleB 1.25
-./nevil -xp_path asymm4 -tn 0 -xn SiblingAsymTrial -angleA 1.25 -angleB 0.25
+./nevil -xp_path asymm3 -tn 0 -xn SiblingAsymTrial -angleA 0.5 -angleB 1.5
+./nevil -xp_path asymm4 -tn 0 -xn SiblingAsymTrial -angleA 1.5 -angleB 0.5
 
