@@ -1,17 +1,17 @@
-#NEVIL: Sibling Experiment [![Build Status](https://travis-ci.org/ou-real/nevil-sibling.svg)](https://travis-ci.org/ou-real/nevil-sibling)
+# NEVIL: Sibling Experiment [![Build Status](https://travis-ci.org/ou-real/nevil-sibling.svg)](https://travis-ci.org/ou-real/nevil-sibling)
 
 
-##Usage
+## Usage
 You can clone this repository by running:
 ```bash
 git clone https://github.com/ou-real/nevil-sibling.git
 ```
 
-###Compilation/Install
-####Windows
+### Compilation/Install
+#### Windows
 * Someone please write this
 
-####Unix
+#### Unix
 The binaries will be written to build folder.
 ```bash
 cmake CMakeLists.txt <-DDEBUG=ON/OFF> <-DO=ON/OFF> <-DGUI=ON/OFF> 
@@ -28,9 +28,9 @@ You can run this application by executing the following command. The binaries ar
 cd build
 ./nevil <args>
 ```
-####Command line arguments
+#### Command line arguments
 This program takes command line arguments both for the simulation config and specific experiment config. You can pass any arguments (as long as they are not taken) and use them in your experiment.
-#####Simulation Arguments
+##### Simulation Arguments
 All arguments have default values
 * `output`: The output folder for this application. `result` by default.
 * `xp_path`: The path for output of that specific run only. Uses time for naming the directory by default.
@@ -42,7 +42,7 @@ All arguments have default values
 * `ms`: Maximum number of timesteps. Default values are set in `trial_controller.cpp`: 1000.
 * `ps`: Population size.  Default values are set in `trial_controller.cpp`: 80.
 
-#####JSON
+##### JSON
 You can use JSON to pass the desired command line arguments to the program.
 ```bash
 ./nevil control.json
@@ -63,25 +63,25 @@ Example
 ```bash
 ./nevil -tn 1 -ps 80 -sn true -xn TestTrial -ms 1000 -mg 200
 ```
-###Sibling Experiment
-####Experiment arguments
+### Sibling Experiment
+#### Experiment arguments
 * `sn`:
 * `mr`:
 * `br`:
 
-##Dependencies
+## Dependencies
 * [GCC](https://gcc.gnu.org) or [Clang](http://clang.llvm.org)
 * [CMake](http://www.cmake.org)
 * [ENKI](http://home.gna.org/enki/): Already included in the project.
 * [QT4.8](http://qt-project.org/doc/qt-4.8/): Optional, to enable GUI.
 
-###Install Dependencies
+### Install Dependencies
 
-####Windows
+#### Windows
 * Someone please write this
 
-####Unix
-#####OS X
+#### Unix
+##### OS X
 To install the required packages you need to have Xcode installed. For convenience, you also need to have either [HomeBrew](http://brew.sh) or [MacPorts](https://www.macports.org) installed.
 To install the required packages run the following commands:
 ```bash
@@ -97,7 +97,7 @@ If you are using MacPorts run the following commands:
 sudo port install cmake
 sudo port install qt4-mac
 ```
-#####Debian based Linux
+##### Debian based Linux
 To install the required packages run the following commands:
 ```bash
 sudo apt-get install build-essential
@@ -105,7 +105,7 @@ sudo apt-get install cmake
 sudo apt-get install git-core
 sudo apt-get install libqt4-dev
 ```
-##Structure
+## Structure
     nevil-sibling
     ├── README.md                   - Description
     ├── .gitignore                  - Files ignore by Git
@@ -132,9 +132,9 @@ sudo apt-get install libqt4-dev
         ├── util                    - Implementation files for utility modules
         └── *.cpp                   - Other implementation files specific to the project
 
-##[Potential Bugs](https://github.com/ou-real/nevil-sibling/issues)
+## [Potential Bugs](https://github.com/ou-real/nevil-sibling/issues)
 
-##[To do](https://github.com/ou-real/nevil-sibling/milestones)
+## [To do](https://github.com/ou-real/nevil-sibling/milestones)
 
-##License
+## License
 [MIT license](http://opensource.org/licenses/MIT)
